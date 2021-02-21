@@ -8,12 +8,6 @@
 <body>
   <script>
 
-// this is a test.
-
-
-// okay i have no fucking idea at this point. dude idk
-// test #3335555
-
     /* 
     pseudo-code for rock, paper, scissors:
     make program that selects random
@@ -35,14 +29,15 @@
 
     function playRound(playerSelection, computerSelection) {
       playerSelection = window.prompt('Rock, Paper, Scissors?');
-      playerSelection = playerSelection.toLowerCase();
-      computerSelection = computerSelection.toLowerCase();
-      
       if (playerSelection === null || playerSelection === "") {
-        alert('Please try again');
+        alert('Please input something');
         playRound(playerSelection, computerSelection);
         return;
       }
+      playerSelection = playerSelection.toLowerCase();
+      computerSelection = computerSelection.toLowerCase();
+      
+      
       // Player's Losses //
 
 
@@ -73,7 +68,7 @@
         alert("It's a Draw!")
       }
       else {
-        alert('Please try again'); 
+        alert('Invalid Choice'); 
         playRound(playerSelection, computerSelection);
         return;
       }
