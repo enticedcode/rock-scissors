@@ -24,7 +24,7 @@
 
     let computerScore = 0;
     let playerScore = 0;
-
+    let roundNum = 1;
     function computerPlay() {
       return choice[Math.floor(Math.random() * choice.length)];
     }
@@ -53,6 +53,8 @@
       else if (playerSelection === 'scissors' && computerSelection === 'rock') {
         alert("You Lose! Rock beats Scissors")
       }
+
+
 
       // Player's Wins //
       else if (playerSelection === 'rock' && computerSelection === 'scissors') {
