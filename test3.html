@@ -22,8 +22,8 @@
 
     let playerSelection;
 
-    const computerScore = 0;
-    const playerScore = 0;
+    let computerScore = 0;
+    let playerScore = 0;
 
     function computerPlay() {
       return choice[Math.floor(Math.random() * choice.length)];
@@ -80,11 +80,13 @@
     function game() {
       for(i = 0; i < 5; i++)
       playRound(playerSelection, computerSelection);
+
     }
     
 
 
     function gameScore() {
+
 
     }
 console.log(game());
